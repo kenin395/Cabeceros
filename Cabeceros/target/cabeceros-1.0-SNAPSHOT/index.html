@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--
+     * Author: Kenin Cusme
+     * Fecha: 06/11/2025
+     * Descripción: Este documento HTML muestra una página para el manejo de cabeceras HTTP.
+     * Permite visualizar los cabeceros de solicitud (request) y descargar una lista en formato XLS.
+     * Incluye estilos modernos y una estructura visual centrada y agradable al usuario.
+     -->
+
     <meta charset="UTF-8">
-    <title>Manejo de cabeceros</title>
+    <title>Manejo de Cabeceros</title>
+
+    <!--
+     * Estilos CSS internos:
+     * Se define una paleta de colores basada en tonos azules y grises suaves.
+     * Se aplican estilos responsivos, tipografía legible y efectos de hover para los enlaces.
+     -->
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,6 +40,8 @@
             align-items: center;
             justify-content: center;
             height: 70vh;
+            gap: 20px;
+            text-align: center;
         }
 
         a {
@@ -55,17 +71,33 @@
         }
     </style>
 </head>
+
 <body>
 
+<!--
+ * Encabezado principal de la página.
+ * Representa el título del sitio y proporciona un contexto visual al usuario.
+ -->
 <h1>Manejo de Cabeceros HTTP</h1>
 
+<!--
+ * Contenedor principal:
+ * Incluye un mensaje descriptivo y dos enlaces que permiten:
+ * 1. Mostrar los cabeceros HTTP de la solicitud actual.
+ * 2. Descargar o visualizar una lista en formato XLS.
+ -->
 <div class="container">
-    <p>Haz clic en el siguiente botón para ver los detalles de la petición HTTP y sus cabeceras.</p>
-    <a href="cabeceros-request">Mostrar Cabeceros</a>
+    <p>Haz clic en una opción para visualizar la información correspondiente.</p>
+    <a href="cabeceros-request">Mostrar Cabeceros HTTP</a>
+    <a href="cabeceras/producto.xls">Mostrar Lista</a>
 </div>
 
+<!--
+ * Pie de página (opcional):
+ * Puede incluir información de derechos de autor, versión o contacto.
+ -->
 <footer>
-    © 2025 - Proyecto Servlet HTTP | Desarrollado por <b>Kenin Cusme</b>
+    &copy; 2025 - Página de manejo de cabeceras HTTP desarrollada por Kenin Cusme.
 </footer>
 
 </body>
